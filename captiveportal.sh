@@ -17,8 +17,8 @@ iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 10.0.0.
 iptables -P FORWARD DROP
 EOF
 
-iptables-converter -s iptablescaptive > /etc/iptables.rules
-rm iptablescaptive
+iptables-converter -s iptablesrules > /etc/iptables.rules
+rm iptablesrules
 
 # dnsmasq configs
 cat <<EOF > /etc/dnsmasq.conf
