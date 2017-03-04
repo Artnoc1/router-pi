@@ -27,8 +27,8 @@ sudo iptables -t nat -A PREROUTING -i $phy -p udp --dport 53 -j REDIRECT --to-po
 sudo iptables -t nat -A PREROUTING -i $phy -p tcp --syn -j REDIRECT --to-ports 9040
 EOF
 
-iptables-converter -s iptablescaptive > /etc/iptables.rules
-rm iptablescaptive
+iptables-converter -s iptablesrules > /etc/iptables.rules
+rm iptablesrules
 
 # dnsmasq configs
 cat <<EOF > /etc/dnsmasq.conf
