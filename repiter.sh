@@ -25,8 +25,8 @@ iptables -t nat -A POSTROUTING -o $upstream -j MASQUERADE
 iptables -A FORWARD -i $phy -o $upstream -j ACCEPT
 EOF
 
-iptables-converter -s iptablescaptive > /etc/iptables.rules
-rm iptablescaptive
+iptables-converter -s iptablesrules > /etc/iptables.rules
+rm iptablesrules
 
 # dnsmasq configs
 cat <<EOF > /etc/dnsmasq.conf
