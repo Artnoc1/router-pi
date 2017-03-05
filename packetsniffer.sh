@@ -10,3 +10,5 @@ brctl addif bridge0 eth1
 ifconfig bridge0 up
 tcpdump -s0 -i eth0 -C 50 -w capture-$(date +%a-%d%m%y-%H%M-%S).pcap
 EOF
+
+reboot
