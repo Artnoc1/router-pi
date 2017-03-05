@@ -61,8 +61,8 @@ auto eth0
 iface eth0 inet dhcp
 
 # Remove if you don't want static IP
-allow-hotplug wlan0  
-iface wlan0 inet static  
+allow-hotplug $phy
+iface $phy inet static  
     address 10.0.0.1
     netmask 255.255.255.0
     network 10.0.0.0
@@ -70,7 +70,7 @@ iface wlan0 inet static
 #   wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 EOF
 
-echo "Turning of power saving for wlan0"
+echo "Turning of power saving for $phy"
 iwconfig $phy power off
 
 # Tell DHCPD to ignore wireless int. Handle with hostapd
