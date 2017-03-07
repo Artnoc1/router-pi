@@ -8,6 +8,7 @@ cat <<EOF > /etc/hostapd/hostapd.conf
 interface=$phy
 driver=nl80211
 ssid=Free Wifi
+channel=6
 bssid=DD:3E:A8:A4:A2:8F
 #macaddr_acl=0
 #auth_algs=1
