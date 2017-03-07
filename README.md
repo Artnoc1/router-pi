@@ -1,6 +1,6 @@
 # router-pi
 
-# Install
+### Install
 ```bash
 git clone https://github.com/vay3t/router-pi
 cd router-pi
