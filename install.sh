@@ -23,7 +23,7 @@ chmod 644 /var/log/tor/notices.log
 update-rc.d apache2 enable
 update-rc.d dnsmasq enable
 update-rc.d hostapd enable
-#update-rc.d tor enable
+update-rc.d tor disable
 
 echo Cisco > /etc/hostname
 sed -i 's/kali/Cisco/' /etc/hosts
