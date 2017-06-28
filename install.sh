@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install apache2 dnsmasq hostapd iptables-converter macchanger php7.0 tor -y
+apt-get install apache2 dhcpd dnsmasq hostapd iptables-converter macchanger nmap php7.0 tor -y
 
 sed -i 's#^DAEMON_CONF=.*#DAEMON_CONF=/etc/hostapd/hostapd.conf#' /etc/init.d/hostapd
 
