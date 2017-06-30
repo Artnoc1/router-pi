@@ -18,9 +18,6 @@ listen-address=192.168.0.1
 bind-interfaces
 bogus-priv
 dhcp-range=192.168.0.100,192.168.0.250,12h
-dhcp-option=3,192.168.0.1
-dhcp-option=6,192.168.0.1
-#no-resolv
 log-queries
 EOF
 
