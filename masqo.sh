@@ -31,5 +31,5 @@ killall dnsmasq
 rm dnsmasqo.conf
 iptables -F
 iptables -t nat -F
-ifconfig eth0 down
+ifconfig $phy down
 echo '0' > /proc/sys/net/ipv4/ip_forward
